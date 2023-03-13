@@ -47,6 +47,17 @@ namespace User_Registration_Lambda
                 Console.WriteLine("Its not valid.");
             }
         }
+        public void ValidatePhoneNumber(string number)
+        {
+            if (registrationModels.Any(x => x.phoneNumber.IsMatch(number)))
+            {
+                Console.WriteLine("Its valid.");
+            }
+            else
+            {
+                Console.WriteLine("Its not valid.");
+            }
+        }
     }
 }
 
