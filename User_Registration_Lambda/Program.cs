@@ -13,6 +13,7 @@ namespace User_Registration_Lambda
             User_Registration userRegistration = new User_Registration();
             userRegistration.ValidateFirstName("Tanvi");
             userRegistration.ValidateLastName("Kapoor");
+            userRegistration.ValidateEmail("shindetanvi0203@gmail.com");
             Console.ReadLine();
         }
     }

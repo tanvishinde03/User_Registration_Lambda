@@ -36,7 +36,17 @@ namespace User_Registration_Lambda
                 Console.WriteLine("Its not valid.");
             }
         }
-
+        public void ValidateEmail(string email)
+        {
+            if (registrationModels.Any(x => x.email.IsMatch(email)))
+            {
+                Console.WriteLine("Its valid.");
+            }
+            else
+            {
+                Console.WriteLine("Its not valid.");
+            }
+        }
     }
 }
 
