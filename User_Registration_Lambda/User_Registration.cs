@@ -58,6 +58,18 @@ namespace User_Registration_Lambda
                 Console.WriteLine("Its not valid.");
             }
         }
+        public void ValidatePassword(string password)
+        {
+            if (registrationModels.Any(x => x.PasswordRuleOne.IsMatch(password)))
+            {
+                Console.WriteLine("Its valid.");
+            }
+            else
+            {
+                Console.WriteLine("Its not valid.");
+            }
+        }
     }
 }
+
 

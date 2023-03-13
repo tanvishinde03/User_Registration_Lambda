@@ -15,6 +15,7 @@ namespace User_Registration_Lambda
             userRegistration.ValidateLastName("Kapoor");
             userRegistration.ValidateEmail("shindetanvi0203@gmail.com");
             userRegistration.ValidatePhoneNumber("91 8007622250");
+            userRegistration.ValidatePassword("Password");
             Console.ReadLine();
         }
     }
