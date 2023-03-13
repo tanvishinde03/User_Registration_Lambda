@@ -18,6 +18,7 @@ namespace User_Registration_Lambda
             userRegistration.ValidatePassword("Password");
             userRegistration.ValidatePasswordString("Tanvi123");
             userRegistration.ValidateNumericPassword("Tanu0203");
+            userRegistration.ValidateSpclCharPassword("Tanvi123@");
             Console.ReadLine();
         }
     }
