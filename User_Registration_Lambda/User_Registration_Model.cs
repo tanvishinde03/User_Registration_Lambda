@@ -15,6 +15,7 @@ namespace User_Registration_Lambda
         public Regex phoneNumber = new Regex(@"^[0-9]{1,2}\s[0-9]{10}$");
         public Regex PasswordRuleOne = new Regex(@".{8,}$");
         public Regex PasswordRuleTwo = new Regex(@"^(?=.*[A-Z]).{8,}$");
+        public Regex PasswordRuleThree = new Regex(@"^(?=.*[0-9])(?=.*[A-Z]).{8,}$");
     }
 }
 

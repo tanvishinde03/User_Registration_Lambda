@@ -80,7 +80,19 @@ namespace User_Registration_Lambda
                 Console.WriteLine("Its not valid.");
             }
         }
+        public void ValidateNumericPassword(string password)
+        {
+            if (registrationModels.Any(x => x.PasswordRuleThree.IsMatch(password)))
+            {
+                Console.WriteLine("Its valid.");
+            }
+            else
+            {
+                Console.WriteLine("Its not valid.");
+            }
+        }
     }
+
 }
 
 

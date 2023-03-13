@@ -17,6 +17,7 @@ namespace User_Registration_Lambda
             userRegistration.ValidatePhoneNumber("91 8007622250");
             userRegistration.ValidatePassword("Password");
             userRegistration.ValidatePasswordString("Tanvi123");
+            userRegistration.ValidateNumericPassword("Tanu0203");
             Console.ReadLine();
         }
     }
